@@ -12,6 +12,9 @@ def read_file(file_name):
 # TODO: Step 1 - update the below function to correctly choose text file chosen from command line arguments. 
 #                Use `quotes.txt` for blank user input.
 def ask_file_name(user_input):
+    if user_input == "":
+        quotes_file ='quotes.txt'
+        return quotes_file
     pass
 
 
