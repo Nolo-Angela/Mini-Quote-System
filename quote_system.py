@@ -6,7 +6,13 @@ Quotees = ["Abdullah Ibrahim","Miriam Makeba", "Nelson Mandela", "Eleanor Roosev
 # TODO: Step 2 - Correct the functionality in the function below to successfully open file
 #                and to sucessfully handle the FileNotFoundError. 
 def read_file(file_name):
-    pass
+    try:
+        f = open(file_name, "r")
+        contents = f.read()
+        return contents
+
+    except FileNotFoundError:
+        print("No such file")
 
 
 # TODO: Step 1 - update the below function to correctly choose text file chosen from command line arguments. 
