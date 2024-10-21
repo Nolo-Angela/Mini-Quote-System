@@ -15,7 +15,6 @@ def ask_file_name(user_input):
     if user_input == "":
         quotes_file ='quotes.txt'
         return quotes_file
-    pass
 
 
 # TODO: Step 3 - randomly select quotee from `Quotees` list and return a random quotee. 
