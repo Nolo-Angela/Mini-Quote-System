@@ -25,18 +25,22 @@ def ask_file_name(user_input):
 
 # TODO: Step 3 - randomly select quotee from `Quotees` list and return a random quotee. 
 def select_random_quotee(Quotees):
+    random_quotee = random.choice(Quotees)
     return random_quotee
 
 # TODO: Step 4 - correct the functionality in the function below to 
 #                match quote from text file to chosen quotee. 
 #                "Quote/quotee does not exist." must be returned for quote that doesn't exist.
 def find_quote(random_quotee,quotes):
-    return quote
-
+    for quote in quotes:
+        if random_quotee in quotes:
+            return quote
+    return "Quote/quotee does not exist."
 
 # TODO: Step 5 - Correctly print out the final results to pass the unitests.
 def final_output(quote,quotee):
-    pass
+    print(quote)
+    print(quotee)
  
 if __name__ == "__main__":
     """
